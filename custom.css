@@ -1,0 +1,31 @@
+.screen1{
+    text-align: center;
+}
+
+.word1{
+    position: relative;
+    top: -325px;
+    left: -315px;
+}
+
+.word2{
+    position: relative;
+    top: -450px;
+    left: -125px;
+
+    
+}
+
+.word3{
+    position: relative;
+    top: -500px;
+    left: 100px;
+
+}
+
+.word4{
+    position: relative;
+    top: -590px;
+    left: 315px;
+
+}

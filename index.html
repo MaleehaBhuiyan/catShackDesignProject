@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>Cat Shack 🐈</title>
+   <meta charset ="utf-8">
+
+   <!-- BOOTSTRAP LINK-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+   <!-- CUSTOM STYLE SHEET LINK-->
+   <link rel="stylesheet" type="text/css" href="custom.css">
+
+   <!-- JQUERY LINK-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+   <!-- MOVING TEXT LINK-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+
+  </head>
+  
+  <body>
+
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: bisque">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="60" height="50" alt="" loading="lazy">
+        </a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- SCREEN 1 -->
+      <div class="screen1">
+          <div>
+            <img src="images/jumbrotronBackground.png" alt="" width="1000" height="450" loading="lazy">
+          </div>
+
+        <div class="word1">
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                  <span class="letters">Welcome</span>
+                </span>
+            </h1>
+
+            <style>
+                .ml6 {
+                position: relative;
+                font-weight: 900;
+                font-size: 2.5em;
+                }
+
+                .ml6 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+                }
+
+                .ml6 .letter {
+                display: inline-block;
+                line-height: 1em;
+                }
+            </style>
+
+            <script>
+                var textWrapper = document.querySelector('.ml6 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                .add({
+                    targets: '.ml6 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                }).add({
+                    targets: '.ml6',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+            </script>
+              
+        </div>
+  
+        <div class="word2">
+            <h1 class="ml7">
+                <span class="text-wrapper">
+                  <span class="letters">To     </span>
+                </span>
+            </h1>
+
+            <style>
+                .ml7 {
+                position: relative;
+                font-weight: 900;
+                font-size: 2.5em;
+                }
+
+                .ml7 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+                }
+
+                .ml7 .letter {
+                display: inline-block;
+                line-height: 1em;
+                }
+            </style>
+
+            <script>
+                var textWrapper = document.querySelector('.ml7 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                .add({
+                    targets: '.ml7 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                }).add({
+                    targets: '.ml7',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+            </script>
+              
+        </div>
+  
+        <div class="word3">
+            <h1 class="ml8">
+                <span class="text-wrapper">
+                  <span class="letters">Cat</span>
+                </span>
+            </h1>
+
+            <style>
+                .ml8 {
+                position: relative;
+                font-weight: 900;
+                font-size: 2.5em;
+                }
+
+                .ml8 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+                }
+
+                .ml8 .letter {
+                display: inline-block;
+                line-height: 1em;
+                }
+            </style>
+
+            <script>
+                var textWrapper = document.querySelector('.ml8 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                .add({
+                    targets: '.ml8 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                }).add({
+                    targets: '.ml8',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+            </script>
+              
+        </div>
+  
+        <div class="word4">
+            <h1 class="ml9">
+                <span class="text-wrapper">
+                  <span class="letters">Shack</span>
+                </span>
+            </h1>
+
+            <style>
+                .ml9 {
+                position: relative;
+                font-weight: 900;
+                font-size: 2.5em;
+                }
+
+                .ml9 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+                }
+
+                .ml9 .letter {
+                display: inline-block;
+                line-height: 1em;
+                }
+            </style>
+
+            <script>
+                var textWrapper = document.querySelector('.ml9 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: true})
+                .add({
+                    targets: '.ml9 .letter',
+                    translateY: ["1.1em", 0],
+                    translateZ: 0,
+                    duration: 750,
+                    delay: (el, i) => 50 * i
+                }).add({
+                    targets: '.ml9',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+            </script>
+              
+        </div>
+      </div>
+      
+
+
+      
+     
+
+  </body>
+
+
+</html>
