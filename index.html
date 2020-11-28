@@ -15,6 +15,8 @@
 
    <!-- MOVING TEXT LINK-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
+
 
 
 
@@ -25,7 +27,7 @@
 
     <!-- Nav -->
 
-    <nav class="navbar navbar-expand-lg" style="background-color: bisque">
+    <nav class="navbar navbar-expand-lg" style="background-color: pink;">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" width="60" height="50" alt="" loading="lazy">
         </a>
@@ -53,7 +55,7 @@
 
 
       <!-- SCREEN 1 -->
-      <div class="screen1">
+      <div id="container1">
           <div>
             <img src="images/jumbrotronBackground.png" alt="" width="1000" height="450" loading="lazy">
           </div>
@@ -97,7 +99,7 @@
                     translateY: ["1.1em", 0],
                     translateZ: 0,
                     duration: 750,
-                    delay: (el, i) => 50 * i
+                    // delay: (el, i) => 50 * i
                 }).add({
                     targets: '.ml6',
                     opacity: 0,
@@ -148,7 +150,7 @@
                     translateY: ["1.1em", 0],
                     translateZ: 0,
                     duration: 750,
-                    delay: (el, i) => 50 * i
+                    // delay: (el, i) => 50 * i
                 }).add({
                     targets: '.ml7',
                     opacity: 0,
@@ -199,7 +201,7 @@
                     translateY: ["1.1em", 0],
                     translateZ: 0,
                     duration: 750,
-                    delay: (el, i) => 50 * i
+                    // delay: (el, i) => 50 * i
                 }).add({
                     targets: '.ml8',
                     opacity: 0,
@@ -250,7 +252,7 @@
                     translateY: ["1.1em", 0],
                     translateZ: 0,
                     duration: 750,
-                    delay: (el, i) => 50 * i
+                    // delay: (el, i) => 50 * i
                 }).add({
                     targets: '.ml9',
                     opacity: 0,
@@ -262,9 +264,120 @@
               
         </div>
       </div>
-      
 
 
+    <!-- CONTAINER 2 -->
+
+     <div id="container2">
+       <div id="helpFindText">
+         <h1 style="text-align: center;">Let us help you find a</h1>
+         <h1 class="ml11" style="text-align: center">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">Hello Goodbye</span>
+          </span>
+        </h1>
+
+        <style>
+          .ml11 {
+            font-weight: 700;
+            font-size: 3.5em;
+          }
+
+          .ml11 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.1em;
+            padding-right: 0.05em;
+            padding-bottom: 0.15em;
+          }
+
+          .ml11 .line {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #fff;
+            transform-origin: 0 50%;
+          }
+
+          .ml11 .line1 { 
+            top: 0; 
+            left: 0;
+          }
+
+          .ml11 .letter {
+            display: inline-block;
+            line-height: 1em;
+          }
+        </style>
+
+        <script>
+          var textWrapper = document.querySelector('.ml11 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+          anime.timeline({loop: true})
+            .add({
+              targets: '.ml11 .line',
+              scaleY: [0,1],
+              opacity: [0.5,1],
+              easing: "easeOutExpo",
+              duration: 700
+            })
+            .add({
+              targets: '.ml11 .line',
+              translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+              easing: "easeOutExpo",
+              duration: 700,
+              delay: 100
+            }).add({
+              targets: '.ml11 .letter',
+              opacity: [0,1],
+              easing: "easeOutExpo",
+              duration: 600,
+              offset: '-=775',
+              delay: (el, i) => 34 * (i+1)
+            }).add({
+              targets: '.ml11',
+              opacity: 0,
+              duration: 1000,
+              easing: "easeOutExpo",
+              delay: 1000
+            });
+        </script>
+       </div>
+
+       <div id="catPersonalities">
+         <div id="catPersonality1">
+           <img src="images/catPersonality1.jpg" alt="" height="356" width="200">
+         </div>
+         <div id="catPersonality2">
+          <img src="images/catPersonality2.jpg" alt="" height="356" width="200">
+        </div>
+        <div id="catPersonality3">
+          <img src="images/catPersonality3.jpg" alt="" height="356" width="200">
+        </div>
+        <div id="catPersonality4">
+          <img src="images/catPersonality4.jpg" alt="" height="356" width="200">
+        </div>
+        <div id="catPersonality5">
+          <img src="images/catPersonality5.jpg" alt="" height="356" width="200">
+        </div>
+
+       </div>
+
+     </div>
+
+     <!-- FEATURED CATS -->
+
+     <div id="featuredCatsContainer">
+       <h1 id="featuredCatsTitle">
+         FEATURED CATS 
+       </h1>
+
+
+     </div>
       
      
 

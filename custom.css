@@ -1,5 +1,16 @@
-.screen1{
+/* body{
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+
+
+
+
+#container1{
     text-align: center;
+    background-color: powderblue;
+    height: 383px;
 }
 
 .word1{
@@ -29,3 +40,78 @@
     left: 315px;
 
 }
+
+.homepageSlideShow1{
+    position: relative;
+    top: 50px;
+    left: -125px;
+}
+
+#helpFindText{
+   background-color: pink;
+   height: 365px;
+   width: 450px;
+}
+
+#catPersonalities{
+    border: 5px solid pink;
+    height: 365px;
+    width: 990px;
+    position: relative;
+    top: -365px;
+    left: 450px;
+}
+
+#catPersonality2{
+    position: relative;
+    top: -356px;
+    left: 200px;
+}
+
+#catPersonality3{
+    position: relative;
+    top: -712px;
+    left: 400px;
+    
+}
+
+#catPersonality4{
+    position: relative;
+    top: -1068px;
+    left: 600px;  
+}
+
+#catPersonality5{
+    position: relative;
+    top: -1424px;
+    left: 780px;
+    
+}
+
+/* #featuredCatsTitle{
+    color: black;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+} */
+
+#featuredCatsTitle{
+    position: relative;
+    top: -300px;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
