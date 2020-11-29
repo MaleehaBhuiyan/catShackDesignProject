@@ -65,6 +65,7 @@
       
         <div class="bottomBorder" > 
         <h2>About</h2>
+        <br/>
         <b>HOUSE-TRAINED</b>
         </br>
          
@@ -252,6 +253,9 @@
         }
       </script>
 
+     <footer class="footer">
+      <p>2020&copy;	CAT SHACK 🐈</p>
+     </footer>
 
   </body>
 
