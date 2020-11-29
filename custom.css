@@ -187,3 +187,27 @@
     grid-column: 4 / 4;
     grid-row: 1;
 }
+
+
+.catDescription{
+    height: 700px;
+    width: 500px;
+    position: relative;
+    top: 50px;
+    left: 800px;
+    
+}
+
+.individualCatName{
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: powderblue;
+    text-align: center;
+
+}
+
+.bottomBorder{
+    border-bottom: 5px solid pink;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
