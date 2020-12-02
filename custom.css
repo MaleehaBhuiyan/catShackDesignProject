@@ -1,7 +1,7 @@
-/* body{
-    overflow: hidden;
-    white-space: nowrap;
-} */
+body{
+    /* overflow: hidden;
+    white-space: nowrap; */
+}
 
 
 /* NAVBAR */
@@ -48,17 +48,19 @@
 }
 
 #helpFindText{
+    padding-top: 70px;
    background-color: pink;
-   height: 365px;
+   height: 373px;
    width: 450px;
 }
 
 #catPersonalities{
     border: 5px solid pink;
-    height: 365px;
+    background-color: pink;
+    height: 373px;
     width: 990px;
     position: relative;
-    top: -365px;
+    top: -373px;
     left: 450px;
 }
 
@@ -88,14 +90,8 @@
     
 }
 
-/* #featuredCatsTitle{
-    color: black;
-    -webkit-text-fill-color: white; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-} */
 
-#featuredCatsTitle{
+.heading{
     position: relative;
     top: -300px;
     font-size: 80px;
@@ -221,3 +217,22 @@
     width: 100%;
     height: 2.5rem; 
 }
+
+.adoptButton{
+    position: absolute;
+    top: 1100px;
+    left: 360px;
+}
+
+.donateButton{
+    position: absolute;
+    top: 1150px;
+    left: 345px;
+
+}
+
+#allCatsContainer{
+    position: relative;
+    top: 300px;
+}
+
